@@ -1,0 +1,33 @@
+#green {
+    color: green;
+}
+#blue {
+    color: blue;
+}
+.green-and-bold {
+    color: green;
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+div {
+    color: red;
+}
+#green-and-lighter {
+    font-weight: lighter;
+    color: green;
+}
+.centrar {
+    text-align: center;
+}
+.red {
+    color: red;
+}
+
+/* .centrar, .red {
+    text-align: center;
+    color: red;
+/* } 
+/*
+h1, p, h2 {
+    color: blanchedalmond;
+} */

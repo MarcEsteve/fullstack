@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilos-div-id.css">
+    <title>Multiples selectores</title>
+</head>
+<body>
+    <div id="green">
+        <h1>Titulo</h1>
+        <p>Párrafo</p>
+    </div>
+    
+    <div id="blue" class="green-and-bold">
+        <h2>Segundo titulo</h2>
+        <p><span style="color:#1e2623 ;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nam veniam quos quam <em>consequuntur</em>  doloremque quo</span> officiis earum vel, sit voluptatum eveniet facere iusto aliquam, sequi voluptatem quod, mollitia distinctio.</p>
+    </div>
+    <div id="green-and-lighter">
+        <!-- solamente se aplica la propiedad color del selector #green-and-lighter -->
+        <h1>Hola herencia</h1>
+        <!-- la propiedad font-weight se toma del selector h1 (automáticamente impuesto por
+        el navegador) y con mayor especificidad que una propiedad heredadad -->
+    </div>  
+    <!-- aplican los estilos de los selectores .centrar y .red -->
+    <p class="centrar red">Hola</p>
+    <!-- aplican los estilos del selector .centrar -->
+    <p class="centrar">Buenos días</p>      
+</body>
+</html>
