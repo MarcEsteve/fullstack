@@ -1,0 +1,7 @@
+1. Crea un archivo pruebadecolor.html, con h1, h2,h3, varios p
+2. crear hoja de estilo externa estilosdecolor.css
+3. Enlaza HTML con CSS
+4. Da un color en HEX #808000 en el estilo directo h1
+5. Dale un color en rgb en estilo interno al h2
+6. Dale un color con un nombre de color en estilo externo a h3
+ 
