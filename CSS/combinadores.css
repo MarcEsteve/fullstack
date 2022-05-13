@@ -1,0 +1,16 @@
+
+h2 + p {
+    color: red;
+}
+h2 ~ p {
+  color:orange;
+}
+div > p {
+  color:green;
+}
+p {
+  color:blue !important;
+}
+div p {
+    color:rgb(244, 27, 168);
+}

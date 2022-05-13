@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.main-header {
+    background-color: #2ddf5c;
+    padding: 8px 16px; 
+    width:100%;
+}
+header.main-header {
+    background-color: #df2dd9;
+}
+li.main-nav {
+    /* Solo recibe el elemento li */
+    display:inline-block;
+    background-color: rgb(255, 187, 127);
+}
+ul.main-nav {
+    /* Solo recibe el elemento ul */
+    display:inline-block;
+    background-color: aquamarine;
+}
+nav.main-nav {
+    /* Solo recibe el elemento nav */
+    background-color: blueviolet;
+}
