@@ -26,3 +26,37 @@ nav.main-nav {
     /* Solo recibe el elemento nav */
     background-color: blueviolet;
 }
+div,nav.main-nav{
+    display: inline-block;
+}
+.main-header > div {
+    display: inline-block;
+}
+h4 {
+    /* superrayado linea superior*/
+    text-decoration: overline;
+}
+h2 {
+    /* tachado */
+    text-decoration: line-through;
+}
+h3 {
+    /* subrayado */
+    text-decoration: underline;
+}
+p.uppercase {
+    /* Mayúscula */
+    text-transform: uppercase;
+}
+p.lowercase {
+    /* Minúscula */
+    text-transform: lowercase;
+}
+p.capitalize {
+    /* Capitalización */
+    text-transform: capitalize;
+}
+span.uppercase {
+    /* Mayúscula */
+    text-transform: uppercase;
+}
