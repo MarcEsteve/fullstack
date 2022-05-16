@@ -1,0 +1,88 @@
+#flex-container {
+    display: flex;
+}
+.flex-container-direction {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 152, 152);
+    /* align-items: center; */
+}
+.flex-container-direction > div {
+    background-color: rgb(147, 147, 248);
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.flex-container-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+}
+.flex-container-wrap > div {
+    background-color: red;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: blue;
+}
+.container > div {
+    background-color: red;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.flex-container-justify {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blue;
+}
+.flex-container-justify > div {
+    background-color: red;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.flex-container-align {
+    display: flex;
+    height: 200px;
+    align-items: baseline;
+    background-color: blue;
+}
+.flex-container-align > div {
+    background-color: red;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.flex-container-align-content {
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-color: blue;
+    }
+.flex-container-align-content > div {
+    background-color: red;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.item {
+    flex: 0 0 200px;
+}
