@@ -60,3 +60,14 @@ span.uppercase {
     /* Mayúscula */
     text-transform: uppercase;
 }
+p.indent {
+    text-indent: 50px;
+}
+
+p.separacionLinea {
+    line-height: 1.8;
+}
+
+p.rtl {
+    direction: rtl;
+}
