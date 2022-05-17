@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas JAVASCRIPT (frontend)</title>
+    <script src="../JS/primerjavascript.js"></script>
+    <script>
+        alert("Ventana de alerta"); 
+    </script>
+</head>
+<body>
+    <h1>Pruebas JAVASCRIPT (frontend)</h1>
+    <p id="texto">Texto incial</p>
+    <button type="submit" onclick="cambia()">CAMBIA</button>
+    <button type="submit" onclick="incial()">INICIAL</button>
+    <br>    
+    <script>
+        function cambia() {
+            document.getElementById("texto").innerHTML = "Párrafo cambiado";
+        }
+        function incial() {
+            document.getElementById("texto").innerHTML = "Texto incial";
+        }
+    </script>
+    <script>
+        // VENTANA DE ALERTA EN EL NAVEGADOR
+        // alert("Ventana de alerta"); 
+        // ESCRIBE EN EL PROPIO DOCUMENTO HTML
+        // document.write("Hello world! Texto en el documento");
+        // PODEMOS REVISAR ESTE TEXTO EN F12 LA CONSOLA 
+        // console.log("Hello world! Texto en la consola"); 
+    </script>
+    <script>
+        document.write("Hello world! Texto en el documento");
+    </script>
+    <noscript>
+        Lo siento, tu navegador no acepta JavaScript!
+    </noscript>
+</body>
+</html>
