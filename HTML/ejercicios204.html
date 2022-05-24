@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Strings</title>
+</head>
+<body>
+    <h1>Ejercicio Pag 204</h1>
+    <p><b>Ejercicio 1 y 2</b></p>
+    <!-- Ejercicio 1 y 2 escribe un programa que dado dos string compruebe si los dos primeros
+caracteres y los dos últimos son iguales. -->
+    <script>
+   let str=prompt("Escribe cualquier palabra","palabra1");
+   let str2=prompt("Escribe otra palabra","palabra2");      //cojemos las palabras con el prompt
+   if ((str.charAt(0)) == (str2.charAt(0))) {             //charAT para comparar los dos primeros caracteres
+       document.write('Los primeros caracteres son iguales <br>')
+   } else {document.write('Los primeros caracteres  no son iguales <br>')
+     
+   }
+ Nstr=(str.length)-1;
+ Nstr2=(str2.length)-1;               //lenght-1 para definir la ultima posicion en numero de la palabra
+
+ console.log(str,Nstr);
+ console.log(str2,Nstr2);
+
+   if (str.charAt(Nstr) == str2.charAt(Nstr2)) {
+       document.write('Los ultimos caracteres son iguales')
+   } else {
+       document.write('Los ultimos caracteres no son iguales')
+       
+   }
+    </script>
+     <p><b>Ejercicio 3</b></p>
+     <!--Ejercicio 3: escribe un programa que compruebe que el substring "abc" existe en un
+string dado, pero no puede encontrarse ni al comienzo, ni al final.  -->
+<script>
+    let str3="dsaabcasdabcs"
+    
+    if ((str3.indexOf('abc'))!=(-1) && str3.indexOf('abc')!=(0) && str3.lastIndexOf('abc')!=(str3.length-3)) {
+        document.write('Existe y no esta al principio o al final');
+    } else {document.write('No existe o existe al principio o al final');
+        
+    }
+</script>    
+<p><b>Ejercicio 4</b></p>
+   <!-- Ejercicio 4: escribe un programa que dado un string y una determinado posición,
+compruebe que el carácter anterior y el posterior son iguales o no. -->
+<script>
+let str4= "abcba";
+let Nstr4 = 2;
+
+if ((str4.charAt(Nstr4-1))==(str4.charAt(Nstr4+1))) {
+    document.write("Son iguales el caracter anterior y posterior a la posicion"," ",Nstr4);
+    
+} else {
+    document.write("No son iguales el caracter anterior y posterior a la posicion"," ",Nstr4);
+    
+}
+</script>
+<p><b>Ejercicio 5</b></p>
+<!-- Ejercicio 5: escribe un programa que muestre por pantalla la posición de la segunda y
+tercera ocurrencia del carácter 'a' en un string dado. -->
+<script>
+    let str5= "plokijaesrdtgy";
+    let pos1=str5.indexOf('a')+2;
+    console.log(pos1);
+    let pos2=str5.indexOf('a')+3;
+    let char1=str5.charAt(pos1);
+    let char2=str5.charAt(pos2);
+    console.log(char1);
+if(str5.indexOf('a')!=(-1)){
+document.write(char1,char2);
+}else{
+document.write("no hay ninguna 'a' ")
+
+}
+
+
+</script>
+<p><b>Ejercicio 6</b></p>
+<!-- Ejercicio 6: escribe un programa que devuelva si un string es palíndromo (se escribe igual
+hacia delante y hacia detrás). Ejemplo: "sometemos". (si ponemos mayus y minus tambien funciona) -->
+<script>
+let pali= "someTemos";
+let pali1= pali.toLowerCase();
+let pali2= pali.toLowerCase().split('').reverse().join('');
+
+if (pali1==pali2) {
+    document.write("Es un palindromo");
+} else {
+    document.write("No es un palindromo");
+}
+</script>
+
+
+
+<p><b>Ejercicio 7</b></p>
+<!--Ejercicio 7: escribe un programa que elimine el último carácter de un string. -->
+<script>
+    let str7= "Hola, buenas";
+    str7= str7.substring(0, str7.length-1);  //str7.slice(0,-1);
+    document.write(str7);
+
+    
+
+</script>
+<!-- Ejercicio 8: escribe un programa que inserte el carácter 'b' cada tres posiciones en un
+string. -->
+
+<p><b>Ejercicio 8</b></p>
+
+<script>
+let str8="En un lugar de la mancha";
+let letra='b';
+let lon= str8.length;
+console.log(lon);
+str8 = str8.split('');
+console.log(str8); //Marc: Lo muestro para ver que lo hace correcto, incluso espacios
+for (let i = 0; i < lon; i++) {
+    if ((i%3)==0) {  //Marc: He quitado !(i==0) && !(i==-1) innecesarios en realidad
+        str8.splice((i-1),1,letra);   //falta saber como reemplazar los caracteres por la letra
+        console.log(str8); //Marc: No es necesario, pero ok para revisar
+    } else {    
+        console.log("F",(i-1)," "); //Marc: No es necesario, pero ok para revisar
+    }
+}
+str8=str8.join(''); //Marc: join() une de nuevo los arrays a strings pero se le debe asignar a una variable a mostrar
+document.write(str8);
+</script>
+<!-- 
+Ejercicio 9: escribe un programa que convierta en mayúsculas la primera letra de cada
+palabra de un string.  -->
+<p><b>Ejercicio 9</b></p>
+<script>
+    let str9="hola, mundo";
+    
+    document.write(str9.charAt(0).toUpperCase()+str9.slice(1));
+</script>
+</body>
