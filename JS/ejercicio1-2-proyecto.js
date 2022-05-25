@@ -34,6 +34,7 @@ console.log(arrayObj2);
 arrayObj3=Object.keys(objeto3)
 console.log(arrayObj3);
 lon1 =arrayObj1.length;//4
+console.log(typeof(objeto2[arrayObj2[3]]));
 for (let i = 0; i < lon1; i++) {
     console.log(objeto1[arrayObj1[i]]);
 }
