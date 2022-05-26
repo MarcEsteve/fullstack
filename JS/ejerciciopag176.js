@@ -33,16 +33,73 @@ const dividir2 =(x,y,callback) => callback(x/y);
 // const callback = (resultado) => {
 //     console.log(resultado);
 // }
+//Ejercicio 4 colocar el callback definido dentro
+// sumar2(4,2,(resultado) => {
+//     console.log(resultado);
+// });
+// restar2(3,1,(resultado) => {
+//     console.log(resultado);
+// });
+// multiplicar2(5,7,(resultado) => {
+//     console.log(resultado);
+// });
+// dividir2(6,8,(resultado) => {
+//     console.log(resultado);
+// });
+//Ejercicio 5 setTimeout() de cada funcion, 1s, 2s, 3s y 4s respectivamente
+// setTimeout(() => {
+//     console.log(sumar2(4,2,(resultado) => {
+//         console.log(resultado);
+//     }));
+// }, 1000);
+// setTimeout(() => {
+//     console.log(restar2(3,1,(resultado) => {
+//         console.log(resultado);
+//     }));
+// }, 2000);
+// setTimeout(() => {
+//     console.log(multiplicar2(5,7,(resultado) => {
+//         console.log(resultado);
+//     }));
+// }, 3000);
+// setTimeout(() => {
+//     console.log(dividir2(6,8,(resultado) => {
+//         console.log(resultado);
+//     }));
+// }, 4000);
+// document.getElementById("id1").innerHTML = "dskadjasd";
 
-sumar2(4,2,(resultado) => {
-    console.log(resultado);
+/*
+código síncrono
+*/
+// const consultarDatabase = () => {
+//     const startPoint = new Date().getTime();
+//     while (new Date().getTime() - startPoint <= 2000);
+//     return "Consulta realizada";
+// }
+// console.log("Primera consulta al servidor");
+// const consulta1 = consultarDatabase();
+// console.log(consulta1);
+// console.log("Segunda consulta al servidor");
+// const consulta2 = consultarDatabase();
+// console.log(consulta2);
+// console.log("Más tareas a realizar...");
+
+/*
+código asíncrono
+*/
+const consultarDatabase = (callback) => {
+    setTimeout(() => {
+    callback("Consulta realizada");
+    }, 2000);
+}
+this.dsdsd
+console.log("Primera consulta al servidor");
+consultarDatabase(function(consulta) {
+console.log(consulta);
 });
-restar2(3,1,(resultado) => {
-    console.log(resultado);
+console.log("Segunda consulta al servidor");
+consultarDatabase(function(consulta) {
+console.log(consulta);
 });
-multiplicar2(5,7,(resultado) => {
-    console.log(resultado);
-});
-dividir2(6,8,(resultado) => {
-    console.log(resultado);
-});
+console.log("Más tareas a realizar...");
