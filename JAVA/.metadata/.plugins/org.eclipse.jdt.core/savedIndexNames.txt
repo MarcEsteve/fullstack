@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Program Files (x86)\MARC\FEINA\2022-FULL STACK WEB ST BOI\fullstack\JAVA\.metadata\.plugins\org.eclipse.jdt.core
+636094492.index
+2380175872.index
