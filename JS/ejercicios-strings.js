@@ -14,6 +14,7 @@ let ejercicio3 = "xyz l xyz a xyz";
 //Ejercicio 4: escribe un programa que dado un string y una determinado posición,compruebe que el carácter anterior y el posterior son iguales o no.
 let stringPos = "Hola uuenas";
 let pos = 6;
+
 // if ((stringPos.charAt(pos)==stringPos.charAt(pos-1)) || (stringPos.charAt(pos)==stringPos.charAt(pos+1))) {
 //     console.log("La letra anterior o posterior es igual");
 // } else {
